@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .whole{
+            background-color: #fdfdfd;
+            height: 96vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            background-color: #dee9ee;
+            justify-content: space-between;
+            height: 250px;
+            width: 300px;
+            font-size: 13px;
+            border: #dee9ee;
+            box-shadow: 15px;
+            
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+             margin-top: 10px;
+             margin-left: 25px;
+        }
+        input {
+         width: 90px;
+        }
+        #sub{
+            background-color: rgb(7, 173, 173);
+            color: #fdfdfd;
+            border: 0cap;
+            border-radius: 5px;
+            margin-left: 100px;
+        }
+    </style>
+    <script>
+        function check(){
+            let x=document.getElementById("fname").value;
+            let y=document.getElementById("lname").value;
+            if(x==""){
+               alert("It's Very Wrong Bro!")
+               return false;
+            }
+            else if(y==""){
+                alert("Areyyyyyyyy!")
+                return false;
+            }
+            else{
+                alert("chetaaaaaaaaaa Manasulayo")
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="whole">
+        <form action="">
+            <div class="form">
+            <div class="main">
+        <div class="left">
+           <label for="fname" >First Name: <br>
+            <input type="text" id="fname" placeholder="sterin" ><br>
+           </label><br>
+           <label for="email">Email:
+            <input type="email" name="email" id="email" placeholder="sample123@gmail.com"><br>
+           </label><br>
+           <label for="dob">Date of Birth:
+            <input type="date" id="dob"><br>
+           </label><br> <br>
+           <label for="hobbies">Hobbies:</label> <br>
+            <select name="hobbies" id="hobbies">
+            <option value="play">Playing</option>
+            <option value="sing">Singing</option>
+            <option value="dance">Dancing</option>
+        </select>
+        
+           
+        </div>
+        <div class="right">
+           <label for="lname">Last Name: <br>
+            <input type="text" id="lname" placeholder="eugen"><br>
+           </label><br>
+           <label for="age">Age: <br>
+            <input type="number" id="age"><br>
+           </label><br>
+           <label for="gender">Gender:</label><br>
+           <input type="radio" id="male" value="Male" name="gender">
+           <label for="male">Male</label>
+           <input type="radio" id="female" value="Female" name="gender">
+           <label for="female">Female</label><br>
+           <br><label for="ph">Phone Number: <br>
+            <input type="tel" id="ph" maxlength="10"><br>
+        </label><br>
+    </div>
+        </div>
+        <input type="submit" value="Submit" id="sub" onclick="check()">
+        </div>
+        </form>
+    </div>
+</body>
+</html>
